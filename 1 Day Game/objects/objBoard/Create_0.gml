@@ -115,10 +115,12 @@ function PieceBehavior(pieceToMove) {
 					MovePiece(pieceToMove, turn);
 				} else if (arr[ar.piece] == piece.mine) {
 					MovePiece(piece.skull, turn);
-				} else if (arr[ar.piece] == piece.skull) {
-					MovePiece(piece.mine, color.white);
 				} else if (arr[ar.team] != selectedPieceTeam) {
-					MovePiece(pieceToMove, turn);
+					if (arr[ar.piece] == piece.skull) {
+						MovePiece(piece.mine, color.white);
+					} else {
+						MovePiece(pieceToMove, turn);
+					}
 				}
 			}
 			break;
