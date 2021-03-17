@@ -8,7 +8,6 @@ function LoadPositionFromFen(fen) {
 	
 	repeat(string_length(fen)) {
 		var symbol = string_char_at(fen, i);
-		show_debug_message(symbol)
 		
 		if (symbol == "/") {
 			column = 0
@@ -22,7 +21,7 @@ function LoadPositionFromFen(fen) {
 				var pieceColor = symbol == string_upper(symbol) ? color.black : color.white; 
 				var pieceType = pieceTypeFromSymbol[? string_lower(symbol)];
 				
-				board[# column, row] = [pieceType, pieceColor]
+				board[# column, row] = [pieceType, pieceColor];
 				column++;
 			}	
 		}

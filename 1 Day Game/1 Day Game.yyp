@@ -2,10 +2,13 @@
   "resources": [
     {"id":{"name":"LoadPositionFromFen","path":"scripts/LoadPositionFromFen/LoadPositionFromFen.yy",},"order":0,},
     {"id":{"name":"sprCastle","path":"sprites/sprCastle/sprCastle.yy",},"order":1,},
-    {"id":{"name":"sprRoad","path":"sprites/sprRoad/sprRoad.yy",},"order":0,},
+    {"id":{"name":"sprBishop","path":"sprites/sprBishop/sprBishop.yy",},"order":0,},
+    {"id":{"name":"sprPawn","path":"sprites/sprPawn/sprPawn.yy",},"order":3,},
     {"id":{"name":"objBoard","path":"objects/objBoard/objBoard.yy",},"order":0,},
+    {"id":{"name":"sprMine","path":"sprites/sprMine/sprMine.yy",},"order":2,},
+    {"id":{"name":"sprRook","path":"sprites/sprRook/sprRook.yy",},"order":6,},
     {"id":{"name":"IsNumber","path":"scripts/IsNumber/IsNumber.yy",},"order":1,},
-    {"id":{"name":"sprSkull","path":"sprites/sprSkull/sprSkull.yy",},"order":2,},
+    {"id":{"name":"sprSkull","path":"sprites/sprSkull/sprSkull.yy",},"order":5,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -43,6 +46,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Pieces.yy","order":6,"resourceVersion":"1.0","name":"Pieces","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dd3342dc-d908-47cf-a5b7-52f8fb2560b0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Pieces",
+    "path": "folders/Sprites/Pieces.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSkull",

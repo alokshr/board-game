@@ -4,6 +4,9 @@ for(var yy = 0; yy < h; yy++){
         //Cell position
         var cX = x-xoffset + xx*cellSize;
         var cY = y-yoffset + yy*cellSize;
+		
+		var cellDistanceX = selectedX - xx;
+		var cellDistanceY = selectedY - yy;
      
         //Alpha
         var alpha = 0.2;
@@ -17,6 +20,37 @@ for(var yy = 0; yy < h; yy++){
             color = c_green;
         }
        
+		if (selectedPiece != -1) {
+			switch (selectedPiece) {
+				case piece.pawn: 
+				
+				if (selectedPieceTeam == color.white) {
+					if (cellDistanceY >= -1 && cellDistanceY <= 0 && abs(cellDistanceX) <= 1) {
+						alpha = 0.4;
+					}
+				} else if (cellDistanceY >= 0 && cellDistanceY <= 1 && abs(cellDistanceX) <= 1) {
+					alpha = 0.4;
+				}
+				break;
+				
+				case piece.bishop:
+				
+				if (abs(cellDistanceY) == abs(cellDistanceX)) {
+					alpha = 0.4;	
+				}
+				
+				break;
+				
+				case piece.rook: 
+				
+				if ((cellDistanceX == 0 && cellDistanceY != 0) || (cellDistanceX != 0 && cellDistanceY == 0)) {
+					alpha = 0.4;
+				}	
+				
+				break;
+			}
+		}
+		
         //Draw cell
         draw_set_alpha(alpha);
         draw_set_color(color);
